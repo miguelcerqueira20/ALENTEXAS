@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2b150b" />
+  <meta name="description" content="ALENTEXAS — countdown oficial até 23 de julho." />
+  <title>ALENTEXAS — Countdown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div id="entryGate" class="entry-gate" role="dialog" aria-modal="true" aria-labelledby="entryTitle">
+    <div class="entry-card">
+      <div class="entry-emoji" aria-hidden="true">🤠</div>
+      <p class="entry-kicker">ALENTEXAS saloon access</p>
+      <h2 id="entryTitle">Entrar no countdown</h2>
+      <p>Abre o portão da casa do Martim e vem para a festa com o DJ Oito CR8</p>
+      <button id="startExperience" class="start-btn" type="button" onclick="window.startAlentexas ? window.startAlentexas() : document.getElementById('entryGate').classList.add('hidden')">▶ Entrar e começar música</button>
+      <small>Nota: se o Spotify bloquear o arranque, carrega no play dentro do player.</small>
+    </div>
+  </div>
+
+  <main class="page-shell">
+    <section class="hero" aria-label="Countdown ALENTEXAS">
+      <div class="hero-copy">
+        <h1><span class="hat" aria-hidden="true"></span><span class="wordmark">ALENTEXAS</span></h1>
+        <p class="subtitle">O countdown oficial até <strong>23 de julho</strong>. Em <strong>ALENTEXAS</strong>, o pôr do sol cai sobre o monte, a poeira levanta-se na estrada e a caboiada acontece sem limites.</p>
+      </div>
+
+      <div class="countdown-panel">
+        <div class="poster-topline">
+          <span>WANTED</span>
+          <span>23 JUL</span>
+        </div>
+        <div id="status" class="status">Falta pouco para levantar poeira...</div>
+
+        <div class="timer" role="timer" aria-live="polite">
+          <article class="time-card"><span id="days">00</span><small>Dias</small></article>
+          <article class="time-card"><span id="hours">00</span><small>Horas</small></article>
+          <article class="time-card"><span id="minutes">00</span><small>Minutos</small></article>
+          <article class="time-card"><span id="seconds">00</span><small>Segundos</small></article>
+        </div>
+
+        <div class="progress-wrap" aria-label="Progresso até 23 de julho">
+          <div class="progress-meta">
+            <span>Estrada até ALENTEXAS</span>
+            <strong id="progressLabel">0%</strong>
+          </div>
+          <div class="progress-track">
+            <div id="progressBar" class="progress-bar"></div>
+            <span id="rider" class="rider" aria-hidden="true">🐎</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" aria-label="Paisagem ALENTEXAS">
+      <div class="landscape">
+        <div class="hills hill-back"></div>
+        <div class="hills hill-front"></div>
+        <div class="windmill" aria-hidden="true"><div class="blade"></div><div class="tower"></div></div>
+        <div class="cork-tree" aria-hidden="true"><span class="trunk"></span><span class="crown c1"></span><span class="crown c2"></span><span class="crown c3"></span></div>
+        <div class="cactus" aria-hidden="true"></div>
+        <div class="fence" aria-hidden="true"></div>
+        <div class="road" aria-hidden="true"></div>
+        <div class="dust dust-a" aria-hidden="true"></div>
+        <div class="dust dust-b" aria-hidden="true"></div>
+        <div class="cowboy" aria-hidden="true">🤠</div>
+      </div>
+    </section>
+
+    <section class="memory-showcase" aria-label="Slideshow ALENTEXAS">
+
+      <div class="slideshow-card">
+        <div class="slideshow-stage" id="slideshowStage" aria-live="polite">
+          <figure class="slide-item active"><img src="media/01-arena-selfie.jpeg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/02-cody.png" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/03-arena-wide.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/04-arena-shirt.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/05-curtain.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/06-drinks.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><video src="media/07-video.mp4" muted playsinline preload="metadata"></video></figure>
+          <figure class="slide-item"><video src="media/08-video.mp4" muted playsinline preload="metadata"></video></figure>
+          <figure class="slide-item"><img src="media/09-cart.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><video src="media/10-video.mp4" muted playsinline preload="metadata"></video></figure>
+          <figure class="slide-item"><img src="media/11-shirt-flex.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><video src="media/12-video.mp4" muted playsinline preload="metadata"></video></figure>
+          <figure class="slide-item"><img src="media/13-sofa-sleep.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/14-bottle.jpg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/15-captain.jpeg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/16-sofa-group.jpeg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><img src="media/17-blanket.jpeg" alt="Memória ALENTEXAS"></figure>
+          <figure class="slide-item"><video src="media/18-video.mp4" muted playsinline preload="metadata"></video></figure>
+          <figure class="slide-item"><img src="media/19-tv.jpeg" alt="Memória ALENTEXAS"></figure>
+        </div>
+
+        <div class="slideshow-overlay">
+          <span class="slideshow-badge">ALENTEXAS PREVIEW</span>
+          <p class="slideshow-caption">um cheirinho do que será este ano</p>
+        </div>
+
+        <div class="slideshow-controls">
+          <button class="slide-nav" id="prevSlide" type="button" aria-label="Slide anterior">‹</button>
+          <div class="slide-dots" id="slideDots" aria-label="Indicadores do slideshow"></div>
+          <button class="slide-nav" id="nextSlide" type="button" aria-label="Próximo slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="music-card" aria-label="Música do countdown">
+      <div>
+        <p class="eyebrow small">Spotify ranch</p>
+        <h2>Som de fundo</h2>
+        <p>Carrega no botão inicial para tentar arrancar a playlist. Se o Spotify bloquear, o player fica pronto para tocares manualmente.</p>
+      </div>
+      <div class="player-actions">
+        <button id="spotifyRefresh" class="btn" type="button">Começar música</button>
+        <a class="btn ghost" href="https://open.spotify.com/playlist/2OfgaAqnqTT55NSZGFM4HT" target="_blank" rel="noreferrer">Abrir no Spotify</a>
+      </div>
+      <p id="musicFeedback" class="music-feedback">A carregar o player Spotify...</p>
+      <div id="spotifyEmbed" class="spotify" title="Playlist Spotify ALENTEXAS"></div>
+      <audio id="localAudio" preload="auto"></audio>
+    </section>
+
+    <section class="details-grid" aria-label="Manifesto ALENTEXAS">
+      <article class="manifest-card">
+        <span>🔥</span>
+        <h3>ALENTEXAS</h3>
+        <p><strong>ALENTEXAS é a terra onde tudo pode acontecer</strong> — monte e rancho, poeira e pôr do sol, liberdade e festa. Aqui a caboiada acontece <strong>sem limites</strong>.</p>
+      </article>
+    </section>
+
+    <section class="sponsors-section" aria-label="Patrocínios ALENTEXAS">
+      <div class="sponsors-head">
+        <p class="eyebrow small">Parceiros oficiais</p>
+        <h2>Patrocínios</h2>
+        <p>Quem apoia a caboiada sem limites em ALENTEXAS.</p>
+      </div>
+
+      <div class="sponsors-grid">
+        <article class="sponsor-card">
+          <img src="media/sponsors/sindicato-dos-taxistas.webp" alt="Sindicato dos Taxistas" loading="lazy">
+          <h3>Sindicato dos Taxistas</h3>
+        </article>
+
+        <article class="sponsor-card">
+          <img src="media/sponsors/ze-cabra-experience.webp" alt="Zé Cabra Experience" loading="lazy">
+          <h3>Zé Cabra Experience</h3>
+        </article>
+
+        <article class="sponsor-card sponsor-card-silau">
+          <img class="sponsor-logo-silau" src="media/sponsors/silau.png" alt="SILAU" loading="lazy">
+          <h3>SILAU</h3>
+        </article>
+
+        <article class="sponsor-card sponsor-card-martim">
+          <img class="sponsor-logo-martim" src="media/sponsors/martim.jpg" alt="Martim" loading="lazy">
+          <h3>Martim</h3>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Feito para contar os dias até <strong>23 de julho de 2026</strong> · ALENTEXAS</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+</html>
